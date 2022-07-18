@@ -5,7 +5,7 @@ test('email fabio.ticona@unmsm.edu.pe -> true',()=>{
 });
 
 test('email 1 -> false',()=>{
-    expect(ValidaEmail.isValidaEmail('1')).toBe(true) 
+    expect(ValidaEmail.isValidaEmail('1')).toBe(false) 
 }); 
 
 //hola mundo
