@@ -4,7 +4,7 @@ pipeline {
         nodejs "node"
     }
     stages {
-        stage('copiando repositorio'){
+        stage('copy repository'){
             steps{
                 git branch: 'master', credentialsId: '0d44f9d0-3885-4685-93d0-d1ab75d730d5', url: 'https://github.com/fabioticona/PruebaUnitaria'
             }
@@ -26,7 +26,7 @@ pipeline {
         }
         stage('deploy'){
             steps{
-                bat 'npm install'
+                echo 'Deploying...'
             }
         }
     }
